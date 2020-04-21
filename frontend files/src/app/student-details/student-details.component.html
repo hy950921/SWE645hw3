@@ -1,0 +1,43 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Submitted forms</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Adress</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZIP</th>
+            <th>Telephone</th>
+            <th>Submission date</th>
+            <th>Like about this college</th>
+            <th>Intrested</th>
+            <th>recommend</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students | async">
+            <td>{{student.firstName}}</td>
+            <td>{{student.lastName}}</td>
+            <td>{{student.emailId}}</td>
+            <td>{{student.address}}</td>
+            <td>{{student.city}}</td>
+            <td>{{student.State}}</td>
+            <td>{{student.zip}}</td>
+            <td>{{student.tel}}</td>
+            <td>{{student.sdate}}</td>
+            <td>{{student.like_about_college}}</td>
+            <td>{{student.intrested_in_college}}</td>
+            <td>{{student.recommend}}</td>
+            
+         </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
